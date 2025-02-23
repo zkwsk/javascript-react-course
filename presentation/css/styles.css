@@ -55,3 +55,7 @@ li {
   line-height: 1;
   width: 1005;
 }
+
+.reveal a {
+  line-break: anywhere;
+}

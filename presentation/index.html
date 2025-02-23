@@ -893,6 +893,19 @@
             </section>
 
             <section>
+                <h2>HTML tags documentation</h2>
+                <ul>
+                    <li>
+                        Find the full list of available HTML tags
+                    </li>
+                    <li>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
                 <h2>Summary</h2>
                 <br>
                 <ul>
@@ -937,28 +950,29 @@
             </section>
 
             <section>
-                <h2>The CSS class selector</h2>
+                <h2>Scope</h2>
                 <br>
-
                 <ul>
                     <li>
-                        The class selector is used to select elements with a
-                        specific class attribute
+                        Learning CSS is simple at the surface level, but very
+                        complicated practice
                     </li>
-                    <li>The class selector is defined with a
-                        period:</li>
+                    <li>
+                        The API is very comprehensive
+                    </li>
+                    <li>
+                        Browser might work different from one another
+                    </li>
+                    <li>
+                        There are UI libraries available that reduces the need
+                        to know CSS in depth
+                    </li>
+                    <li>
+                        Scope of the class is to learn the basic mechanics of
+                        CSS and how it interact with HTML. Not to memorise a lot
+                        of properties and selectors.
+                    </li>
                 </ul>
-                <pre>
-                    <code>
-.classname {
-    property: value;
-}
-
-.blue-text {
-    color: blue;
-}
-                    </code>
-                </pre>
             </section>
 
             <section>
@@ -1076,8 +1090,247 @@ p {
 
             <section>
                 <h2>Sandbox example</h2>
+                <br>
                 <a
-                    href="https://codesandbox.io/p/sandbox/simple-html-example-9zy3kj">https://codesandbox.io/p/sandbox/simple-html-example-9zy3kj</a>
+                    href="https://codesandbox.io/p/sandbox/simple-html-example-9zy3kj">https://codesandbox.io/p/sandbox/simple-html-example-9zy3kj
+                </a>
+                <br>
+                <ul>
+                    <li>
+                        Note how the stylesheet is linked to the HTML document
+                    </li>
+                    <li>
+                        The
+                        <pre>.box</pre> class gives the element a fixed height
+                        and width
+                    </li>
+                    <li>
+                        The
+                        <pre>.red</pre> and
+                        <pre>.blue</pre> classes respectively apply red and blue
+                        background colors and contrasting text colors
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>A general CSS rule</h2>
+                <ul>
+                    <li>
+                        Selector: Which element(s) do you want to style?
+                    </li>
+                    <li>
+                        Property: What do you want to change?
+                    </li>
+                    <li>
+                        Value: The new value of the property
+                    </li>
+                </ul>
+                <br>
+                <pre>
+                    <code>
+selector { property: value; }
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Selector</h2>
+                <br>
+                <pre>
+                    <code>
+selector { ... }
+                    </code>
+                </pre>
+                <br>
+                <ul>
+                    <li>Select HTML elements</li>
+                    <li>Select custom classes</li>
+                    <li>Select elements based on ID (not recommended)</li>
+                    <li>Advanced selection</li>
+                    <li>Full reference: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The element selector</h2>
+                <br>
+                <ul>
+                    <li>The element selector selects elements based on the
+                        element name
+                    </li>
+                    <li>Select all
+                        <pre>p</pre> tag:
+                    </li>
+                </ul>
+                <pre>
+                    <code>
+p {
+    property: value;
+}
+            </section>
+
+            <section>
+                <h2>The CSS class selector</h2>
+                <br>
+
+                <ul>
+                    <li>
+                        The class selector is used to select elements with a
+                        specific class attribute
+                    </li>
+                    <li>The class selector is defined with a
+                        period:</li>
+                </ul>
+                <pre>
+                    <code>
+.classname {
+    property: value;
+}
+
+.blue-text {
+    color: blue;
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Combining selectors (1)</h2>
+                <br>
+                <ul>
+                    <li>
+                        You can combine selectors to target specific elements
+                    </li>
+                    <li>"Select all p tags with the class .blue":</li>
+                </ul>
+                <br>
+                <pre>
+                    <code>
+p.blue {
+    color: blue;
+}
+
+&lt;p class=&quot;blue&quot;&gt;This is a blue paragraph&lt;/p&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>
+                    Combining selectors (2)
+                </h2>
+                <br>
+                <ul>
+                    <li>"Select all p tags nested within an element with the
+                        class
+                        .blue":</li>
+                </ul>
+                <br>
+                <pre>
+                    <code>
+.blue p {
+    color: blue;
+}
+
+&lt;div class=&quot;blue&quot;&gt;
+    &lt;p&gt;This is a blue paragraph&lt;/p&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>CSS properties and HTML elements</h2>
+                <ul>
+                    <li>
+                        The properties available to style an element depends on
+                        the element.
+                    </li>
+                    <li>
+                        Generally all block level elements have width and height
+                        properties and inline elements do not
+                    </li>
+                    <li>
+                        Some elements have special properties. For example
+                        buttons and anchor tags have the ability to customise
+                        the mouse cursor on hover, while this is not possible on
+                        most other elements.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>CSS Properties documentation</h2>
+                <ul>
+                    <li>There are a large amount of CSS properties available
+                    </li>
+                    <li>
+                        Find the complete list at <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index">MDN</a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>CSS Properties documentation</h2>
+                <ul>
+                    <li>There are a large amount of CSS properties available
+                    </li>
+                    <li>
+                        Find the complete list at <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index">MDN</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>CSS in JS</h2>
+                <br>
+                <ul>
+                    <li>
+                        In modern web development it is common to adopt an
+                        approach where CSS is automatically added directly to
+                        the individual HTML tags with Javascript.
+                    </li>
+                    <li>
+                        This is not in violation with our need to ensure
+                        consistency because styling logic is centralised in
+                        javascript instead of being centralised in a CSS file.
+                    </li>
+                    <li>
+                        Can be more flexible when javascript frequently needs to
+                        modify CSS.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <ul>
+                    <li>
+                        CSS is used to style how HTML elements are displayed on
+                        screen
+                    </li>
+                    <li>
+                        A CSS rule constists of a selector, property and value
+                    </li>
+                    <li>
+                        Different selectors can be combined to refine the
+                        selection
+                    </li>
+                    <li>
+                        If no custom rules are applied the browser default rules
+                        will be used
+                    </li>
+                    <li>
+                        It is recommended to keep CSS in a separate file and
+                        link it into the HTML document
+                    </li>
+                </ul>
             </section>
 
             <section>
