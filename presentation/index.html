@@ -15,6 +15,15 @@
     <div class="reveal">
         <div class="slides">
             <section>
+                <h1>Table of contents</h1>
+                <ol>
+                    <li><a href="/#/1">Web Architectures</a></li>
+                    <li><a href="/#/30">Bash Command Line</a></li>
+                    <li><a href="/#/42">HTML</a></li>
+                    <li><a href="/#/68">CSS</a></li>
+                </ol>
+            </section>
+            <section>
                 <h1>Web Architectures</h1>
             </section>
             <section>
@@ -471,6 +480,152 @@
                         experiences</li>
                     <li>React is very popular framework for building SPAs</li>
                 </ul>
+            </section>
+
+            <section>
+                <h1>Learning Bash Command Line</h1>
+                <br>
+                <p>Get ready to learn the essential bash commands for
+                    managing
+                    files, directories, and working with Node.js and Git!
+                </p>
+            </section>
+            <section>
+                <h2>Learning goals</h2>
+                <ul>
+                    <li>Understand how to navigate between directories</li>
+                    <li>Understand to view the contents of a directory</li>
+                    <li>Understand how to run scripts</li>
+                    <li>Understand how to set up a Node.js project</li>
+                    <li>Understand how to add dependencies with NPM</li>
+                    <li>Understand how to clone a project with Git</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Check Node.js & Git Versions</h2>
+                <p><strong>Check Node.js version:</strong></p>
+                <pre><code>node --version</code></pre>
+                <p>Example output:</p>
+                <pre><code>v20.10.0</code></pre>
+
+                <p><strong>Check Git version:</strong></p>
+                <pre><code>git --version</code></pre>
+                <p>Example output:</p>
+                <pre><code>git version 2.48.1</code></pre>
+            </section>
+
+            <section>
+                <h2>Navigate Between Directories</h2>
+                <br>
+                <p>Use the <code>cd</code> command to navigate between
+                    directories in the file system.</p>
+                <pre><code>cd /path/to/directory</code></pre>
+                <p>Examples:</p>
+                <pre><code>cd Documents</code></pre>
+                <pre><code>cd ..</code> (to go up one directory level)</pre>
+                <pre><code>cd ~</code> (to go to the home directory)</pre>
+            </section>
+
+            <section>
+                <h2>See the current directory path</h2>
+                <br>
+                <p>Use the <code>pwd</code> command to display the path to
+                    the
+                    current directory you are working in:</p>
+                <pre><code>pwd</code></pre>
+                <p>Example output:</p>
+                <pre><code>/user/home</code></pre>
+            </section>
+
+            <section>
+                <h2>View the Contents of a Directory</h2>
+                <br>
+                <p>Use the <code>ls</code> command to list files and
+                    directories
+                    within the current directory.</p>
+                <pre><code>ls</code></pre>
+                <p>Examples:</p>
+                <pre><code>ls -l</code> (long listing format)</pre>
+                <pre><code>ls -a</code> (include hidden files)</pre>
+                <pre><code>ls /path/to/directory</code> (list contents of another directory)</pre>
+            </section>
+
+            <section>
+                <h2>Create a New Directory</h2>
+                <br>
+                <p>Use the <code>mkdir</code> command to create a new
+                    directory.
+                </p>
+                <pre><code>mkdir new_directory</code></pre>
+                <p>Examples:</p>
+                <pre><code>mkdir my_project</code> (creates a directory named 'my_project')</pre>
+                <pre><code>mkdir -p parent/child</code> (creates nested directories)</pre>
+            </section>
+
+
+            <section>
+                <h2>Setup a Node.js Project</h2>
+                <br>
+                <p>To create a Node.js project, initialize it with
+                    <code>npm init</code>.
+                </p>
+                <pre><code>npm init</code></pre>
+                <p>Follow the prompts or use <code>npm init -y</code> for
+                    default values.</p>
+                <p>Example:</p>
+                <pre><code>npm init -y</code> (automatically creates a package.json file)</pre>
+            </section>
+
+            <section>
+                <h2>Add Dependencies with NPM</h2>
+                <br>
+                <p>Use <code>npm install</code> to install dependencies for
+                    your
+                    project.</p>
+                <pre><code>npm install <dependency-name></code></pre>
+                <p>Examples:</p>
+                <pre><code>npm install express</code> (installs Express.js)</pre>
+                <pre><code>npm install --save-dev <dependency-name></code> (installs as a devDependency)</pre>
+            </section>
+
+            <section>
+                <h2>Run an NPM Script</h2>
+                <br>
+                <p>Use <code>npm run</code> followed by the script name to
+                    execute an NPM script defined in
+                    <code>package.json</code>.
+                </p>
+                <pre><code>npm run script-name</code></pre>
+                <p>Example:</p>
+                <pre><code>npm run start</code> (runs the 'start' script)</pre>
+
+            </section>
+            <section>
+                <h2>Check Available Scripts</h2>
+                <br>
+                <p>Check available scripts in <code>package.json</code>
+                    under
+                    the <code>"scripts"</code> section:</p>
+                <pre><code>
+{
+    "scripts": {
+        "start": "node app.js",
+        "test": "jest"
+    }
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Clone a Project with Git</h2>
+                <br>
+                <p>Use <code>git clone</code> to clone a repository from
+                    GitHub
+                    or another Git hosting service.</p>
+                <pre><code>git clone <repository-url></code></pre>
+                <p>Example:</p>
+                <pre><code>git clone https://github.com/zkwsk/javascript-react-course.git</code></pre>
             </section>
 
             <section>
@@ -1331,147 +1486,6 @@ p.blue {
                         link it into the HTML document
                     </li>
                 </ul>
-            </section>
-
-            <section>
-                <h1>Learning Bash Command Line</h1>
-                <br>
-                <p>Get ready to learn the essential bash commands for
-                    managing
-                    files, directories, and working with Node.js and Git!
-                </p>
-            </section>
-            <section>
-                <h2>Learning goals</h2>
-                <ul>
-                    <li>Understand how to navigate between directories</li>
-                    <li>Understand to view the contents of a directory</li>
-                    <li>Understand how to run scripts</li>
-                    <li>Understand how to set up a Node.js project</li>
-                    <li>Understand how to add dependencies with NPM</li>
-                    <li>Understand how to clone a project with Git</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Check Node.js & Git Versions</h2>
-                <p><strong>Check Node.js version:</strong></p>
-                <pre><code>node --version</code></pre>
-                <p>Example output:</p>
-                <pre><code>v20.10.0</code></pre>
-
-                <p><strong>Check Git version:</strong></p>
-                <pre><code>git --version</code></pre>
-                <p>Example output:</p>
-                <pre><code>git version 2.48.1</code></pre>
-            </section>
-
-            <section>
-                <h2>Navigate Between Directories</h2>
-                <br>
-                <p>Use the <code>cd</code> command to navigate between
-                    directories in the file system.</p>
-                <pre><code>cd /path/to/directory</code></pre>
-                <p>Examples:</p>
-                <pre><code>cd Documents</code></pre>
-                <pre><code>cd ..</code> (to go up one directory level)</pre>
-                <pre><code>cd ~</code> (to go to the home directory)</pre>
-            </section>
-
-            <section>
-                <h2>See the current directory path</h2>
-                <br>
-                <p>Use the <code>pwd</code> command to display the path to
-                    the
-                    current directory you are working in:</p>
-                <pre><code>pwd</code></pre>
-                <p>Example output:</p>
-                <pre><code>/user/home</code></pre>
-            </section>
-
-            <section>
-                <h2>View the Contents of a Directory</h2>
-                <br>
-                <p>Use the <code>ls</code> command to list files and
-                    directories
-                    within the current directory.</p>
-                <pre><code>ls</code></pre>
-                <p>Examples:</p>
-                <pre><code>ls -l</code> (long listing format)</pre>
-                <pre><code>ls -a</code> (include hidden files)</pre>
-                <pre><code>ls /path/to/directory</code> (list contents of another directory)</pre>
-            </section>
-
-            <section>
-                <h2>Create a New Directory</h2>
-                <br>
-                <p>Use the <code>mkdir</code> command to create a new
-                    directory.
-                </p>
-                <pre><code>mkdir new_directory</code></pre>
-                <p>Examples:</p>
-                <pre><code>mkdir my_project</code> (creates a directory named 'my_project')</pre>
-                <pre><code>mkdir -p parent/child</code> (creates nested directories)</pre>
-            </section>
-
-
-            <section>
-                <h2>Setup a Node.js Project</h2>
-                <br>
-                <p>To create a Node.js project, initialize it with
-                    <code>npm init</code>.
-                </p>
-                <pre><code>npm init</code></pre>
-                <p>Follow the prompts or use <code>npm init -y</code> for
-                    default values.</p>
-                <p>Example:</p>
-                <pre><code>npm init -y</code> (automatically creates a package.json file)</pre>
-            </section>
-
-            <section>
-                <h2>Add Dependencies with NPM</h2>
-                <br>
-                <p>Use <code>npm install</code> to install dependencies for
-                    your
-                    project.</p>
-                <pre><code>npm install <dependency-name></code></pre>
-                <p>Examples:</p>
-                <pre><code>npm install express</code> (installs Express.js)</pre>
-                <pre><code>npm install --save-dev <dependency-name></code> (installs as a devDependency)</pre>
-            </section>
-
-            <section>
-                <h2>Run an NPM Script</h2>
-                <br>
-                <p>Use <code>npm run</code> followed by the script name to
-                    execute an NPM script defined in
-                    <code>package.json</code>.
-                </p>
-                <pre><code>npm run script-name</code></pre>
-                <p>Example:</p>
-                <pre><code>npm run start</code> (runs the 'start' script)</pre>
-                <pre><code>npm run test</code> (runs the 'test' script)</pre>
-                <p>Check available scripts in <code>package.json</code>
-                    under
-                    the <code>"scripts"</code> section:</p>
-                <pre><code>
-      {
-        "scripts": {
-          "start": "node app.js",
-          "test": "jest"
-        }
-      }
-                </code></pre>
-            </section>
-
-            <section>
-                <h2>6. Clone a Project with Git</h2>
-                <p>Use <code>git clone</code> to clone a repository from
-                    GitHub
-                    or another Git hosting service.</p>
-                <pre><code>git clone <repository-url></code></pre>
-                <p>Example:</p>
-                <pre><code>git clone https://github.com/username/project-name.git</code></pre>
             </section>
         </div>
     </div>
