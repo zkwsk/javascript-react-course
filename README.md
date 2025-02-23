@@ -1,5 +1,9 @@
 # javascript-react-course
 
+## Presentation
+
+[Follow the presentation here](https://javascript-react-course.vercel.app/)
+
 ## Video lectures
 
 1. [Fundamental web architectures, static sites, multi-page applications and single page applications](https://youtu.be/m8NJEQh-suw)
