@@ -474,10 +474,619 @@
             </section>
 
             <section>
+                <h1>Introduction to HTML</h1>
+                <br>
+                <p>Learn to format content for the web</p>
+            </section>
+
+            <section>
+                <h2>Learning goals</h2>
+                <ul>
+                    <li>Understand the purpose of writing HTML</li>
+                    <li>Understand the basic structure of an HTML document</li>
+                    <li>Learn how to create headings, paragraphs, and lists</li>
+                    <li>Understand how to add links and images to a webpage</li>
+                    <li>Learn how to create tables and forms</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>HTML Basics</h2>
+                <br>
+                <ul>
+                    <li>HTML (HyperText Markup Language) is the standard markup
+                        language for creating web pages. It describes the
+                        structure
+                        of web pages using markup.</li>
+                    <li>HTML elements are the building blocks of HTML pages.
+                        With
+                        HTML constructs, images and other objects, such as
+                        interactive forms, may be embedded into the rendered
+                        page.
+                    </li>
+                    <li>HTML adds semantics to your content</li>
+                </ul>
+
+
+            </section>
+
+            <section>
+                <h2>Why do we need HTML?</h2>
+                <br>
+                <ul>
+                    <li>Without HTML tags the browser would have no way to know
+                        what to do with your content.
+                        <ul>
+                            <li>All text would be displayed the same</li>
+                            <li>Instead of rendering an image the URL would be
+                                displayed</li>
+                            <li>Tabular data would be one big messy block of
+                                text</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The HTML tag</h2>
+                <br>
+                <p>
+                    Below is a "p" tag which tells the browser that the content
+                    within is a paragraph of text:
+                </p>
+                <pre><code>
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+                </code></pre>
+
+                <p>
+                    The tag itself is not displayed to the user, only the
+                    content. But the browser uses the tag to infer how to
+                    display the
+                    content. In this case the browser will add a line break
+                    after each paragrap of text to segment it from the next
+                    paragraph.
+                </p>
+            </section>
+
+            <section>
+                <h2>Other examples</h2>
+                <br>
+                <pre>
+                    <code>
+&lt;h1&gt;This is a heading&lt;/h2&gt;
+&lt;h2&gt;This is a slightly smaller heading&lt;/h2&gt;
+&lt;img src=&quot;https://picsum.photos/200/300&quot; /&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Opening and closing tags</h2>
+                <br>
+                <p>HTML elements usually consist of an opening tag, some content
+                    and a closing tag:</p>
+                <pre><code>
+&lt;p&gt;Content is here&lt;/p&gt;
+                </code></pre>
+                <p>But in some cases the tag does not have any content and a
+                    self-enclosing tag can be used:</p>
+                <pre><code>
+&lt;hr/&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Nesting HTML tags</h2>
+                <br>
+                <p>Besides raw content, HTML might have tags nested inside other
+                    tags:</p>
+                <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2
+        &lt;ul&gt;
+        &lt;li&gt;Sub-item 1&lt;/li&gt;
+        &lt;li&gt;Sub-item 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                    </code></pre>
+            </section>
+
+            <section>
+                <h2>HTML indentation</h2>
+                <br>
+                <p>We usually indent the tags that are nested, to improve
+                    readability, but it is not a requirement. These snippets are
+                    all equivalent:
+                </p>
+                <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Generic HTML tags</h2>
+                <br>
+                <p>Some tags exist only to impart structure and has no semantic
+                    meaning:</p>
+                <pre><code>
+&lt;div&gt;Some content&lt;/div&gt;
+&lt;span&gt;Some content&lt;/span&gt;
+                </code></pre>
+                <ul>
+                    <li>These tags are often used to group content together for
+                        styling purposes in CSS.
+                    </li>
+                    <li>
+                        <pre>div</pre> is block level and will always break into
+                        new line
+                    </li>
+                    <li>
+                        <pre>span</pre> is inline level and can be used inside
+                        block level tags (paragraph for example)
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Semantic HTML tags</h2>
+                <br>
+                <ul>
+                    <li>Some tags have a specific semantic meaning and are used
+                        to describe
+                        the content</li>
+                    <li>Usually they do not affect the visual styling,
+                        but they can be customized as needed</li>
+                </ul>
+                <pre><code>
+&lt;header&gt;Header content&lt;/header&gt;
+&lt;footer&gt;Footer content&lt;/footer&gt;
+&lt;nav&gt;Navigation content&lt;/nav&gt;
+&lt;article&gt;Article content&lt;/article&gt;
+&lt;section&gt;Section content&lt;/section&gt;
+&lt;aside&gt;Aside content&lt;/aside&gt;
+&lt;main&gt;Main content&lt;/main&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>HTML attributes</h2>
+                <br>
+                <p>HTML tags may have attributes describing them further. For
+                    example the image tag uses the
+                <pre>src</pre> attribute to
+                distinguish the url of the image to be displayed:</p>
+                <pre><code>
+&lt;img src=&quot;https://picsum.photos/200/300&quot; /&gt;
+                </code></pre>
+                <p>The
+                <pre>src</pre> attribute is specific to the image tag and cannot
+                be used on other tags.</p>
+            </section>
+
+            <section>
+                <h2>HTML class attributes</h2>
+                <br>
+                <p>Some attributes can be used on any tag. For example the
+                <pre>class</pre> attribute can be used to add a class to any
+                tag:</p>
+                <pre><code>
+&lt;p class=&quot;paragraph-class&quot;&gt;Some content&lt;/p&gt;
+                </code></pre>
+                <p>Classes are typically used to group instances of the same tag
+                    into classes so you can apply custom styling in CSS to
+                    display them different from other classes.</p>
+            </section>
+
+            <section>
+                <h2>HTML class examples</h2>
+                <br>
+                <p>You might have a rule in CSS defining that all paragraphs are
+                    in black text, but what if you want certain text to be blue
+                    or red? You can add a class:</p>
+                <pre><code>
+&lt;p class=&quot;blue&quot;&gt;Some blue text&lt;/p&gt;
+&lt;p class=&quot;red&quot;&gt;Some red text&lt;/p&gt;
+                </code></pre>
+                <ul>
+                    <li>Note that you cannot do this in HTML alone. You will
+                        need to
+                        add corresponsing styling rules in CSS, which we will
+                        cover
+                        later.
+                    </li>
+                    <li>The main takeaway is that classes allow HTML and CSS to
+                        communicate together</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>HTML ID attributes</h2>
+                <br>
+                <ul>
+                    <li>
+                        IDs are used to identify a specific element in the
+                        document.
+                    </li>
+                    <li>Classes can be applied to many elements, IDs should only
+                        be applied once in the document.
+                    </li>
+                    <li>While classes are often used to style groups of
+                        elements, IDs are often used by javascript to uniquely
+                        target an element operate on.</li>
+                    <li>If you link to a specific ID in a page, the browser will
+                        scroll that element into view when the link is clicked.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>HTML ID examples</h2>
+                <br>
+                <pre><code>
+&lt;h1 id=&quot;main-heading&quot;&gt;Main heading&lt;/h1&gt;
+&lt;p id=&quot;paragraph-1&quot;&gt;Some content&lt;/p&gt;
+&lt;p id=&quot;paragraph-2&quot;&gt;More content&lt;/p&gt;
+                </code></pre>
+                <p>You can combine classes and IDs:</p>
+                <pre><code>
+&lt;p class=&quot;blue&quot; id=&quot;paragraph-1&quot;&gt;Some blue text&lt;/p&gt;
+&lt;p class=&quot;red&quot; id=&quot;paragraph-2&quot;&gt;Some red text&lt;/p&gt;
+&lt;p class=&quot;blue&quot; id=&quot;paragraph-3&quot;&gt;More blue text&lt;/p&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>The anchor tag</h2>
+                <br>
+                <p>The anchor tag is used to create hyperlinks. The
+                <pre>href</pre> attribute is used to specify the URL of the
+                page the link goes to:</p>
+                <pre><code>
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Tim_Berners-Lee&quot;&gt;Tim Berners-Lee on Wikipedia&lt;/a&gt;
+                </code></pre>
+                <p>Clicking the link will take you to the specified URL:</p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim
+                    Berners-Lee on Wikipedia</a>
+
+            </section>
+
+            <section>
+                <h2>Linking to an ID</h2>
+                <br>
+                <p>You can link directly to an ID on the destination page:</p>
+                <pre>
+                    <code>
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research&quot;&gt;Tim Berners-Lee's Career and research on Wikipedia&lt;/a&gt;
+                    </code>
+                </pre>
+                <br>
+                <a
+                    href="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research">Tim
+                    Berners-Lee's Career and research on Wikipedia
+                </a>
+            </section>
+
+            <section>
+                <h2>Tabular data in HTML</h2>
+                <br>
+                <p>When working with data we often need to display tables. HTML
+                    uses a nested structure </p>
+                <pre>
+                    <code>
+&lt;table&gt;
+    &lt;tr&gt;  &lt;!-- Table row --&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;  &lt;!-- Table header --&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, cell 1&lt;/td&gt;  &lt;!-- Table data/column --&gt;
+        &lt;td&gt;Row 1, cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;  
+        &lt;td&gt;Row 2, cell 1&lt;/td&gt;
+        &lt;td&gt;Row 2, cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Tabular data example</h2>
+                <br>
+                <p>Here is what the HTML on the previous slide looks like
+                    formatted:</p>
+                <br>
+                <br>
+                <table>
+                    <tr> <!-- Table row -->
+                        <th>Header 1</th> <!-- Table header -->
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Row 1, cell 1</td> <!-- Table data/column -->
+                        <td>Row 1, cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, cell 1</td>
+                        <td>Row 2, cell 2</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Forms in HTML</h2>
+                <br>
+                <p>Forms are used to collect user input. The form tag is used to
+                    create a form, and the input tag is used to create form
+                    elements:</p>
+                <pre>
+                    <code>
+&lt;form&gt;    &lt;!-- Form element --&gt;
+    &lt;input type=&quot;text&quot; name=&quot;username&quot; placeholder=&quot;Username&quot;&gt;    &lt;!-- Input element --&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/form&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Forms example</h2>
+                <br>
+                <form> <!-- Form element -->
+                    <input type="text" name="username" placeholder="Username">
+                    <!-- Input element -->
+                    <input type="password" name="password"
+                        placeholder="Password">
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section>
+                <h2>A HTML page in context</h2>
+                <br>
+                <ul>
+                    <li>
+                        Doctype declares the version of HTML used
+                    </li>
+                    <li>
+                        The head element contains meta-information
+                    </li>
+                    <li>
+                        The body element contains the content
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>HTML page example</h2>
+                <br>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;My HTML5 Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to HTML5&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML5 document.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Summary</h2>
+                <br>
+                <ul>
+                    <li>HTML elements are the building blocks of web pages</li>
+                    <li>HTML tags add structure and semantics to content</li>
+                    <li>HTML tags are not displayed on screen, but the control
+                        how content is displayed</li>
+                    <li>HTML attributes provide additional information about
+                        elements</li>
+                    <li>HTML elements can be nested inside other elements</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>CSS Introduction</h1>
+            </section>
+
+            <section>
+                <h2>Cascading Style Sheets</h2>
+                <br>
+                <ul>
+                    <li>CSS (Cascading Style Sheets) is a style sheet language
+                        used for describing the presentation of a document
+                        written in HTML</li>
+                    <li>CSS describes how elements should be rendered on screen,
+                        on paper, in speech, or on other media</li>
+
+            </section>
+
+            <section>
+                <h2>Why do we need CSS?</h2>
+                <br>
+                <ul>
+                    <li>Browsers apply default styling to web pages</li>
+                    <li>If we just want to create generic documents we do not
+                        need CSS</li>
+                    <li>Without CSS, web pages would all have the same simple
+                        style and look plain and boring</li>
+                    <li>CSS allow you to layout the page so it looks more like a
+                        modern app and less like a webpage from the 90s</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The CSS class selector</h2>
+                <br>
+
+                <ul>
+                    <li>
+                        The class selector is used to select elements with a
+                        specific class attribute
+                    </li>
+                    <li>The class selector is defined with a
+                        period:</li>
+                </ul>
+                <pre>
+                    <code>
+.classname {
+    property: value;
+}
+
+.blue-text {
+    color: blue;
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Where to put CSS?</h2>
+                <ul>
+                    <li>Directly on individual HTML element</li>
+                    <li>Embedded in the
+                        <pre>head</pre> tag of the page
+                    </li>
+                    <li>In a separate linked .css file</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Inline CSS</h2>
+                <br>
+                <p>Example:</p>
+                <pre>
+                    <code>
+&lt;p style=&quot;color: blue; font-size: 20px;&quot;&gt;This is a paragraph&lt;/p&gt;
+                    </code>
+                </pre>
+                <br>
+                <ul>
+                    <li>
+                        Inline CSS is not recommended because it mixes content
+                        with presentation
+                    </li>
+                    <li>You would have to repeat styling on every tag</li>
+                    <li>HTML becomes hard to maintain</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>CSS in style tag</h2>
+                <br>
+                <ul>
+                    <li>Rule applies to all p tags on page</li>
+                    <li>You need to repeat the style tag on every page</li>
+                </ul>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: blue;
+            font-size: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <br>
+
+            </section>
+
+            <section>
+                <h2>Linking stylesheets</h2>
+                <br>
+                <ul>
+                    <li>You can link an external .css file to the html document
+                        with a
+                        <pre>link</pre> tag
+                    </li>
+                    <li>
+                        The
+                        <pre>link</pre> tag must be placed inside the
+                        <pre>head</pre> tag
+                    </li>
+                    <li>Many pages can link the same external css file ensuring
+                        consistent styling and less duplicated code</li>
+                    <li>This is the recommended practice</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Linked stylesheet example</h2>
+                <pre>
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Styling HTML elements</h2>
+                <br>
+                <p>Here is an example of how to style a paragraph element:</p>
+                <pre>
+                    <code>
+p {
+    color: blue;
+    font-size: 20px;
+}
+                    </code>
+                </pre>
+                <br>
+                <p>This CSS rule will make all paragraph elements blue and
+                    increase the font size to 20 pixels.</p>
+            </section>
+
+            <section>
+                <h2>Sandbox example</h2>
+                <a
+                    href="https://codesandbox.io/p/sandbox/simple-html-example-9zy3kj">https://codesandbox.io/p/sandbox/simple-html-example-9zy3kj</a>
+            </section>
+
+            <section>
                 <h1>Learning Bash Command Line</h1>
                 <br>
-                <p>Get ready to learn the essential bash commands for managing
-                    files, directories, and working with Node.js and Git!</p>
+                <p>Get ready to learn the essential bash commands for
+                    managing
+                    files, directories, and working with Node.js and Git!
+                </p>
             </section>
             <section>
                 <h2>Learning goals</h2>
@@ -519,7 +1128,8 @@
             <section>
                 <h2>See the current directory path</h2>
                 <br>
-                <p>Use the <code>pwd</code> command to display the path to the
+                <p>Use the <code>pwd</code> command to display the path to
+                    the
                     current directory you are working in:</p>
                 <pre><code>pwd</code></pre>
                 <p>Example output:</p>
@@ -529,7 +1139,8 @@
             <section>
                 <h2>View the Contents of a Directory</h2>
                 <br>
-                <p>Use the <code>ls</code> command to list files and directories
+                <p>Use the <code>ls</code> command to list files and
+                    directories
                     within the current directory.</p>
                 <pre><code>ls</code></pre>
                 <p>Examples:</p>
@@ -541,7 +1152,8 @@
             <section>
                 <h2>Create a New Directory</h2>
                 <br>
-                <p>Use the <code>mkdir</code> command to create a new directory.
+                <p>Use the <code>mkdir</code> command to create a new
+                    directory.
                 </p>
                 <pre><code>mkdir new_directory</code></pre>
                 <p>Examples:</p>
@@ -566,7 +1178,8 @@
             <section>
                 <h2>Add Dependencies with NPM</h2>
                 <br>
-                <p>Use <code>npm install</code> to install dependencies for your
+                <p>Use <code>npm install</code> to install dependencies for
+                    your
                     project.</p>
                 <pre><code>npm install <dependency-name></code></pre>
                 <p>Examples:</p>
@@ -578,13 +1191,15 @@
                 <h2>Run an NPM Script</h2>
                 <br>
                 <p>Use <code>npm run</code> followed by the script name to
-                    execute an NPM script defined in <code>package.json</code>.
+                    execute an NPM script defined in
+                    <code>package.json</code>.
                 </p>
                 <pre><code>npm run script-name</code></pre>
                 <p>Example:</p>
                 <pre><code>npm run start</code> (runs the 'start' script)</pre>
                 <pre><code>npm run test</code> (runs the 'test' script)</pre>
-                <p>Check available scripts in <code>package.json</code> under
+                <p>Check available scripts in <code>package.json</code>
+                    under
                     the <code>"scripts"</code> section:</p>
                 <pre><code>
       {
@@ -598,7 +1213,8 @@
 
             <section>
                 <h2>6. Clone a Project with Git</h2>
-                <p>Use <code>git clone</code> to clone a repository from GitHub
+                <p>Use <code>git clone</code> to clone a repository from
+                    GitHub
                     or another Git hosting service.</p>
                 <pre><code>git clone <repository-url></code></pre>
                 <p>Example:</p>

@@ -42,3 +42,16 @@ li {
 /* .slides {
   background-image: url("data:image/svl+xml,"%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M18%200H0v18h18V0ZM9%2012a3%203%200%201%200%200-6%203%203%200%200%200%200%206Z%22%20fill%3D%22%23000%22%2F%3E%3C%2Fsvg%3E");
 } */
+
+.reveal pre {
+  display: inline;
+}
+
+.reveal pre code {
+  background: black;
+  border: 1px solid grey;
+  margin: 1em;
+  padding: 0 1em;
+  line-height: 1;
+  width: 1005;
+}
