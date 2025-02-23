@@ -177,7 +177,7 @@ Exercises:
 Material:
 - [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 - [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
-- [Makind decisions in your code](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals)
+- [Making decisions in your code](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals)
 - [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 
@@ -408,19 +408,3 @@ Exercises:
 1. [Fetch data](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-asynchronous-programming-by-building-an-fcc-forum-leaderboard/step-8)
 
 1. [Catch errors](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-asynchronous-programming-by-building-an-fcc-forum-leaderboard/step-9)
-
-## Command Line
-
-TODO
-
-## React
-
-Material:
-- TODO: React introduction video
-- [Thinking in React](https://react.dev/learn/thinking-in-react)
-
-Exercises:
-- Installing React
-- [React.dev Tic Tac Toe](https://react.dev/learn/tutorial-tic-tac-toe)
-- [React Tutorial](https://react-tutorial.app)
-- 

@@ -505,15 +505,32 @@
 
             <section>
                 <h2>Check Node.js & Git Versions</h2>
+                <br>
                 <p><strong>Check Node.js version:</strong></p>
-                <pre><code>node --version</code></pre>
+                <pre>
+                    <code>
+node --version
+                    </code>
+                </pre>
                 <p>Example output:</p>
-                <pre><code>v20.10.0</code></pre>
+                <pre>
+                    <code>
+v20.10.0
+                    </code>
+                </pre>
 
                 <p><strong>Check Git version:</strong></p>
-                <pre><code>git --version</code></pre>
+                <pre>
+                    <code>
+git --version
+                    </code>
+                </pre>
                 <p>Example output:</p>
-                <pre><code>git version 2.48.1</code></pre>
+                <pre>
+                    <code>
+git version 2.48.1
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -521,11 +538,23 @@
                 <br>
                 <p>Use the <code>cd</code> command to navigate between
                     directories in the file system.</p>
-                <pre><code>cd /path/to/directory</code></pre>
+                <pre>
+                    <code>
+cd /path/to/directory
+                    </code>
+                </pre>
                 <p>Examples:</p>
-                <pre><code>cd Documents</code></pre>
-                <pre><code>cd ..</code> (to go up one directory level)</pre>
-                <pre><code>cd ~</code> (to go to the home directory)</pre>
+                <pre>
+                    <code>
+cd Documents
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+cd ..</code> (to go up one directory level)</pre>
+                <pre>
+                    <code>
+cd ~</code> (to go to the home directory)</pre>
             </section>
 
             <section>
@@ -534,9 +563,17 @@
                 <p>Use the <code>pwd</code> command to display the path to
                     the
                     current directory you are working in:</p>
-                <pre><code>pwd</code></pre>
+                <pre>
+                    <code>
+pwd
+                    </code>
+                </pre>
                 <p>Example output:</p>
-                <pre><code>/user/home</code></pre>
+                <pre>
+                    <code>
+/user/home
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -545,11 +582,21 @@
                 <p>Use the <code>ls</code> command to list files and
                     directories
                     within the current directory.</p>
-                <pre><code>ls</code></pre>
+                <pre>
+                    <code>
+ls
+                    </code>
+                </pre>
                 <p>Examples:</p>
-                <pre><code>ls -l</code> (long listing format)</pre>
-                <pre><code>ls -a</code> (include hidden files)</pre>
-                <pre><code>ls /path/to/directory</code> (list contents of another directory)</pre>
+                <pre>
+                    <code>
+ls -l</code> (long listing format)</pre>
+                <pre>
+                    <code>
+ls -a</code> (include hidden files)</pre>
+                <pre>
+                    <code>
+ls /path/to/directory</code> (list contents of another directory)</pre>
             </section>
 
             <section>
@@ -558,10 +605,18 @@
                 <p>Use the <code>mkdir</code> command to create a new
                     directory.
                 </p>
-                <pre><code>mkdir new_directory</code></pre>
+                <pre>
+                    <code>
+mkdir new_directory
+                    </code>
+                </pre>
                 <p>Examples:</p>
-                <pre><code>mkdir my_project</code> (creates a directory named 'my_project')</pre>
-                <pre><code>mkdir -p parent/child</code> (creates nested directories)</pre>
+                <pre>
+                    <code>
+mkdir my_project</code> (creates a directory named 'my_project')</pre>
+                <pre>
+                    <code>
+mkdir -p parent/child</code> (creates nested directories)</pre>
             </section>
 
 
@@ -571,11 +626,17 @@
                 <p>To create a Node.js project, initialize it with
                     <code>npm init</code>.
                 </p>
-                <pre><code>npm init</code></pre>
+                <pre>
+                    <code>
+npm init
+                    </code>
+                </pre>
                 <p>Follow the prompts or use <code>npm init -y</code> for
                     default values.</p>
                 <p>Example:</p>
-                <pre><code>npm init -y</code> (automatically creates a package.json file)</pre>
+                <pre>
+                    <code>
+npm init -y</code> (automatically creates a package.json file)</pre>
             </section>
 
             <section>
@@ -584,10 +645,19 @@
                 <p>Use <code>npm install</code> to install dependencies for
                     your
                     project.</p>
-                <pre><code>npm install <dependency-name></code></pre>
+                <pre>
+                    <code>
+npm install <dependency-name>
+                  
+    
+</code></pre>
                 <p>Examples:</p>
-                <pre><code>npm install express</code> (installs Express.js)</pre>
-                <pre><code>npm install --save-dev <dependency-name></code> (installs as a devDependency)</pre>
+                <pre>
+                    <code>
+npm install express</code> (installs Express.js)</pre>
+                <pre>
+                    <code>
+npm install --save-dev <dependency-name></code> (installs as a devDependency)</pre>
             </section>
 
             <section>
@@ -597,9 +667,15 @@
                     execute an NPM script defined in
                     <code>package.json</code>.
                 </p>
-                <pre><code>npm run script-name</code></pre>
+                <pre>
+                    <code>
+npm run script-name
+                    </code>
+                </pre>
                 <p>Example:</p>
-                <pre><code>npm run start</code> (runs the 'start' script)</pre>
+                <pre>
+                    <code>
+npm run start</code> (runs the 'start' script)</pre>
 
             </section>
             <section>
@@ -608,14 +684,18 @@
                 <p>Check available scripts in <code>package.json</code>
                     under
                     the <code>"scripts"</code> section:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 {
     "scripts": {
         "start": "node app.js",
         "test": "jest"
     }
 }
-                </code></pre>
+                
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -624,9 +704,18 @@
                 <p>Use <code>git clone</code> to clone a repository from
                     GitHub
                     or another Git hosting service.</p>
-                <pre><code>git clone <repository-url></code></pre>
+                <pre>
+                    <code>
+git clone <repository-url>
+                  
+    
+</code></pre>
                 <p>Example:</p>
-                <pre><code>git clone https://github.com/zkwsk/javascript-react-course.git</code></pre>
+                <pre>
+                    <code>
+git clone https://github.com/zkwsk/javascript-react-course.git
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -690,9 +779,13 @@
                     Below is a "p" tag which tells the browser that the content
                     within is a paragraph of text:
                 </p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;p&gt;This is a paragraph&lt;/p&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
 
                 <p>
                     The tag itself is not displayed to the user, only the
@@ -721,14 +814,22 @@
                 <br>
                 <p>HTML elements usually consist of an opening tag, some content
                     and a closing tag:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;p&gt;Content is here&lt;/p&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <p>But in some cases the tag does not have any content and a
                     self-enclosing tag can be used:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;hr/&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -736,7 +837,9 @@
                 <br>
                 <p>Besides raw content, HTML might have tags nested inside other
                     tags:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;ul&gt;
     &lt;li&gt;Item 1&lt;/li&gt;
     &lt;li&gt;Item 2
@@ -747,7 +850,9 @@
     &lt;/li&gt;
     &lt;li&gt;Item 3&lt;/li&gt;
 &lt;/ul&gt;
-                    </code></pre>
+                    
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -757,7 +862,9 @@
                     readability, but it is not a requirement. These snippets are
                     all equivalent:
                 </p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;ul&gt;
     &lt;li&gt;Item&lt;/li&gt;
 &lt;/ul&gt;
@@ -767,7 +874,9 @@
 &lt;/ul&gt;
 
 &lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -775,10 +884,14 @@
                 <br>
                 <p>Some tags exist only to impart structure and has no semantic
                     meaning:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;div&gt;Some content&lt;/div&gt;
 &lt;span&gt;Some content&lt;/span&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <ul>
                     <li>These tags are often used to group content together for
                         styling purposes in CSS.
@@ -804,7 +917,9 @@
                     <li>Usually they do not affect the visual styling,
                         but they can be customized as needed</li>
                 </ul>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;header&gt;Header content&lt;/header&gt;
 &lt;footer&gt;Footer content&lt;/footer&gt;
 &lt;nav&gt;Navigation content&lt;/nav&gt;
@@ -812,7 +927,9 @@
 &lt;section&gt;Section content&lt;/section&gt;
 &lt;aside&gt;Aside content&lt;/aside&gt;
 &lt;main&gt;Main content&lt;/main&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -822,9 +939,13 @@
                     example the image tag uses the
                 <pre>src</pre> attribute to
                 distinguish the url of the image to be displayed:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;img src=&quot;https://picsum.photos/200/300&quot; /&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <p>The
                 <pre>src</pre> attribute is specific to the image tag and cannot
                 be used on other tags.</p>
@@ -836,9 +957,13 @@
                 <p>Some attributes can be used on any tag. For example the
                 <pre>class</pre> attribute can be used to add a class to any
                 tag:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;p class=&quot;paragraph-class&quot;&gt;Some content&lt;/p&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <p>Classes are typically used to group instances of the same tag
                     into classes so you can apply custom styling in CSS to
                     display them different from other classes.</p>
@@ -850,10 +975,14 @@
                 <p>You might have a rule in CSS defining that all paragraphs are
                     in black text, but what if you want certain text to be blue
                     or red? You can add a class:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;p class=&quot;blue&quot;&gt;Some blue text&lt;/p&gt;
 &lt;p class=&quot;red&quot;&gt;Some red text&lt;/p&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <ul>
                     <li>Note that you cannot do this in HTML alone. You will
                         need to
@@ -889,17 +1018,25 @@
             <section>
                 <h2>HTML ID examples</h2>
                 <br>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;h1 id=&quot;main-heading&quot;&gt;Main heading&lt;/h1&gt;
 &lt;p id=&quot;paragraph-1&quot;&gt;Some content&lt;/p&gt;
 &lt;p id=&quot;paragraph-2&quot;&gt;More content&lt;/p&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <p>You can combine classes and IDs:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;p class=&quot;blue&quot; id=&quot;paragraph-1&quot;&gt;Some blue text&lt;/p&gt;
 &lt;p class=&quot;red&quot; id=&quot;paragraph-2&quot;&gt;Some red text&lt;/p&gt;
 &lt;p class=&quot;blue&quot; id=&quot;paragraph-3&quot;&gt;More blue text&lt;/p&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
             </section>
 
             <section>
@@ -908,9 +1045,13 @@
                 <p>The anchor tag is used to create hyperlinks. The
                 <pre>href</pre> attribute is used to specify the URL of the
                 page the link goes to:</p>
-                <pre><code>
+                <pre>
+                    <code>
+
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Tim_Berners-Lee&quot;&gt;Tim Berners-Lee on Wikipedia&lt;/a&gt;
-                </code></pre>
+                
+                    </code>
+                </pre>
                 <p>Clicking the link will take you to the specified URL:</p>
                 <br>
                 <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim
@@ -1497,6 +1638,445 @@ p.blue {
             </section>
 
             <section>
+                <h2>JavaScript Comments</h2>
+                <br>
+                <p>Used to annotate code.</p>
+                <pre>
+                    <code>
+// This is a single-line comment
+/* This is a multi-line comment */
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>console.log</h2>
+                <br>
+                <p>Used to print messages to the browser console.</p>
+                <pre>
+                    <code>
+console.log("Hello, JavaScript!");
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Variables</h2>
+                <br>
+                <p>Used to store data values.</p>
+                <pre>
+                    <code>
+let name = "Alice";
+console.log(name);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Assignment</h2>
+                <br>
+                <p>Assigns a value to a variable.</p>
+                <pre>
+                    <code>
+let a = 5;
+console.log(a);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Variable Scope</h2>
+                <br>
+                <p>Determines where variables can be accessed.</p>
+                <pre>
+                    <code>
+let x = 1;
+
+if (x === 1) {
+    let x = 2;
+
+    console.log(x);
+    // Expected output: 2
+}
+
+console.log(x);
+// Expected output: 1
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Numbers</h2>
+                <br />
+                <p>JavaScript supports integers and floating-point numbers.</p>
+                <pre>
+                    <code>
+let num = 42;
+console.log(num);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Math Operators</h2>
+                <br>
+                <p>Used to perform mathematical operations.</p>
+                <pre>
+                    <code>
+let sum = 5 + 3;
+console.log(sum);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Strings</h2>
+                <br>
+                <p>Text values enclosed in quotes.</p>
+                <pre>
+                    <code>
+let greeting = "Hello, world!";
+console.log(greeting);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>String Concatenation</h2>
+                <br>
+                <p>Combines strings together.</p>
+                <pre>
+                    <code>
+let fullName = "John" + " " + "Doe";
+console.log(fullName);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>String Concatenation with Template Literals</h2>
+
+                <p>Uses backticks for string interpolation.</p>
+                <pre>
+                    <code>
+let name = "Alice";
+console.log(`Hello, ${name}!`);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>JavaScript Functions with function Keyword</h2>
+                <br>
+                <p>Defines reusable code blocks.</p>
+                <pre>
+                    <code>
+function greet() {
+    console.log("Hello!");
+}
+greet();
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>JavaScript Functions with Arrow Syntax</h2>
+                <br>
+                <p>Shorthand for defining functions.</p>
+                <pre>
+                    <code>
+const greet = () => console.log("Hello!");
+greet();
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Booleans</h2>
+                <br>
+                <p>True or false values.</p>
+                <pre>
+                    <code>
+let isTrue = true;
+console.log(isTrue);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Comparison</h2>
+                <br>
+                <ul>
+                    <li>Used to compare values.</li>
+                    <li>Use strict equality === over loose equality ==</li>
+                </ul>
+                <p>Used to compare values.</p>
+                <pre>
+                    <code>
+console.log(5 === 5); // true
+                    </code>
+                </pre>
+                <br>
+                <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness">Equality
+                    and sameness</a>
+            </section>
+
+            <section>
+                <h2>if-else</h2>
+                <br>
+                <p>Conditional statements.</p>
+                <pre>
+                    <code>
+if (5 > 3) {
+    console.log("Yes");
+} else {
+    console.log("No");
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Ternary Statements</h2>
+                <br>
+                <p>Shorter if-else syntax.</p>
+                <pre>
+                    <code>
+let result = (5 > 3) ? "Yes" : "No";
+console.log(result);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>JavaScript Objects Declaration</h2>
+                <br>
+                <p>Objects store key-value pairs.</p>
+                <pre>
+                    <code>
+let person = { name: "Alice", age: 25 };
+console.log(person);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Retrieving Values from JavaScript Object</h2>
+                <br>
+                <p>Access object properties.</p>
+                <pre>
+                    <code>
+console.log(person.name);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Updating JavaScript Object Values</h2>
+                <br>
+                <p>Modify object properties.</p>
+                <pre>
+                    <code>
+person.age = 26;
+console.log(person.age);
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>While Loops</h2>
+                <br>
+                <p>Repeats a block of code while a condition is true.</p>
+                <pre>
+                    <code>
+let i = 0;
+while (i < 3) {
+    console.log(i);
+    i++;
+}
+                    </code>
+                </pre>
+                <br>
+                <p>(Used rarely)</p>
+            </section>
+
+            <section>
+                <h2>For Loops</h2>
+                <br>
+                <p>Iterates over a sequence.</p>
+                <pre>
+                    <code>
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>For...of Loops</h2>
+                <br>
+                <p>Loops through iterable objects.</p>
+                <pre>
+                    <code>
+const array1 = ["a", "b", "c"];
+
+for (const element of array1) {
+    console.log(element);
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>ES6+ features</h2>
+                <br>
+                <ul>
+                    <li>
+                        Javascript was "stuck" for a long time due to need for
+                        legacy browser support.
+                    </li>
+                    <li>
+                        The ES6 standard introduced a lot of new features that
+                        made the language more modern and easier to work with.
+                    </li>
+                    <li>When we talk about ES6+ we generally talk about modern
+                        javascript features all the way from 2015 up to today.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Array iterator methods</h2>
+                <br>
+                <ul>
+                    <li>
+                        A lot of Javascript and particularly React is written
+                        in a function oriented manner
+                    </li>
+                    <li>
+                        Array iterator methods are a set of functions that
+                        operate on arrays and return new arrays
+                    </li>
+                    <li>
+                        They are a little more "declarative" than for loops in
+                        that they give a bit more context to what the code is
+                        doing.
+                    </li>
+                    <li>
+                        A for a while loop is generic and you would have to
+                        study
+                        the code to understand what it does.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Array.map()</h2>
+                <br>
+                <p>Takes in an array and creates a new array by transforming
+                    each element.
+                </p>
+                <pre>
+                    <code>
+const array1 = [1, 4, 9, 16];
+
+// Pass a function to map
+const map1 = array1.map((x) => x * 2);
+
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Array.filter()</h2>
+                <br>
+                <p>Creates a new array with only elements that pass a test.</p>
+                <pre>
+                    <code>
+const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+const result = words.filter((word) => word.length > 6);
+
+console.log(result);
+// Expected output: Array ["exuberant", "destruction", "present"]
+                      </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Other array iterator functions</h2>
+                <br>
+                <ul>
+                    <li>Array.find() - works like filter, but only returns first
+                        matching element</li>
+                    <li>
+                        Array.some() - returns true if at least one element
+                        passes a given test.
+                    </li>
+                    <li>Array.reduce() - reduces an array to a single value.
+                        Could for example be used to sum all values.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Spread operator ...</h2>
+                <br>
+                <p>Used to expand an array or object into individual elements.
+                </p>
+                <pre>
+                    <code>                          
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5]; // [1, 2, 3, 4, 5]
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { ...obj1, c: 3 }; // { a: 1, b: 2, c: 3 }
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Destructuring assignment</h2>
+                <br>
+                <p>
+                    Extract values from objects and arrays.
+                </p>
+                <pre>
+                    <code>
+const person = { name: "Alice", age: 25 };
+const { name, age } = person;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Promises with Async/Await</h2>
+                <br>
+                <ul>
+                    <li>
+                        Used to handle asynchronous operations.
+                    </li>
+                    <li>
+                        Allow you to way executing certain code until an
+                        operation has finished.
+                    </li>
+                    <li>
+                        Used when fetching data from an API or reading a file.
+                    </li>
+                </ul>
+                <pre>
+                    <code>
+const fetchData = async () => {
+    const res = await fetch("https://api.example.com/data");
+    const data = await res.json();
+    console.log(data);
+};
+                    </code>
+                </pre>
+
 
             </section>
         </div>
