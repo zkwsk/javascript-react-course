@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Architectures</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Web Architectures</h1>
+            </section>
+            <section>
+                <h2>Learning goals</h2>
+                <ul>
+                    <li>Gain a high level understanding of how the
+                        internet works</li>
+                    <li>Understand the difference between Multi Page
+                        Applications and Single Page Applications</li>
+                    <li>Understand how different web architectures have shaped
+                        the experience of the internet over time</li>
+                    <li>Understand why we are trying to learn to build a React
+                        application</li>
+                </ul>
+            </section>
+            <section>
+                <h2>The Internet speed run!</h2>
+                <figure>
+                    <figcpation
+                        style="text-align: center; width: 100%; display: block;">
+                        🏃🏻🏃🏼‍♂️🏃🏽‍♀️
+                    </figcpation>
+                </figure>
+            </section>
+            <section>
+                <h2>Brief history of the internet</h2>
+                <ul>
+                    <li><a
+                            href="https://en.wikipedia.org/wiki/ARPANET">ARPANET</a>
+                        <ul>
+                            <li>Invented in the late 1960s</li>
+                            <li>Developed for defense</li>
+                            <li>Provided very simple messaging functionality
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a
+                            href="https://en.wikipedia.org/wiki/Internet_protocol_suite">TCP/IP</a>
+                        <ul>
+                            <li>Routes data between addresses</li>
+                            <li>Foundation for the current internet</li>
+                            <li>Can recover from package loss</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2><a href="https://en.wikipedia.org/wiki/HTTP">HTTP</a></h2>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>HTTP (Hypertext Transfer Protocol) is a
+                                communication protocol that enables the transfer
+                                of web pages and resources between a client
+                                (browser) and a server over the internet.</li>
+                            <li>
+                                HTTP Requests:
+                                <ul>
+                                    <li>GET: Get a resource</li>
+                                    <li>POST: Post data (from a form for
+                                        example)</li>
+                                    <li>PUT: Update a subset of a resource</li>
+                                    <li>DELETE: Delete a resource</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>IP Address</h2>
+                <ul>
+                    <li>An IP address (Internet Protocol address) is a
+                        unique numerical identifier assigned to a device on a
+                        network, enabling it to communicate with other devices
+                        over the internet or a local network.</li>
+                    <li>
+                        Examples:
+                        <ul>
+                            <li>192.168.1.1 (common private IP used by
+                                routers)</li>
+                            <li>8.8.8.8 (Google's public DNS server)</li>
+                        </ul>
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    <a href="https://en.wikipedia.org/wiki/Domain_Name_System">Domain
+                        Name System</a>
+                </h2>
+                <ul>
+                    <li>The Domain Name System (DNS) is a decentralized system
+                        that translates human-readable domain names (e.g.,
+                        example.com) into numerical IP addresses (e.g.,
+                        192.0.2.1), enabling computers to locate and communicate
+                        with each other on the internet.</li>
+                    <li>Top-level domains
+                        <ul>
+                            <li>.com</li>
+                            <li>.org</li>
+                            <li>.net</li>
+                            <li>.dk</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+            <section>
+                <h2>DNS resolution</h2>
+                <figure>
+                    <img data-src="./assets/DNS_resolver.png" height="300px">
+                    <figcaption>Every nameserver has an incomplete list of
+                        domains
+                        along with the address to the next DNS server to ask.
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Uniform Resource Locator (URL)</h2>
+                <ul>
+                    <li>Example: <a
+                            href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">https://en.wikipedia.org/wiki/Tim_Berners-Lee</a>
+                    </li>
+                    <li>Protocol: http/https</li>
+                    <li>Domain: wikipedia.org</li>
+                    <li>Path: /wiki/Tim_Berners-Lee</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Web Browsers</h2>
+                <ul>
+                    <li>Why do we need them?</li>
+                    <li><code>$ curl https://google.com</code></li>
+                    <li>What does the browser do?
+                        <ul>
+                            <li>View content on the internet</li>
+                            <li>Request web pages from servers</li>
+                            <li>Render HTML, CSS and Javascript</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Early websites</h2>
+                <ul>
+                    <li>Example: <a
+                            href="https://info.cern.ch/">https://info.cern.ch/</a>
+                    </li>
+                    <li>First website created by Tim Berners-Lee! (1991)</li>
+                    <li>Static</li>
+                    <li>Multiple linked pages</li>
+                    <li>Every page written by hand</li>
+                    <li>Default browser styling</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>What is a website? (1)</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/HTML">HTML -
+                            Hypertext Markup Language</a>
+                        <ul>
+                            <li>Content "marked up" with tags that describe
+                                semantics</li>
+                            <li>Markup for headlines, paragraphs, images, forms,
+                                etc.</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://en.wikipedia.org/wiki/CSS">CSS -
+                            Cascading Style Sheets</a> (added 1996)
+                        <ul>
+                            <li>Stylistic rules explaining how certain HTML tags
+                                should be displayed</li>
+                            <li>Rules can "cascade" in a hierarchy, so if there
+                                are multiple rules for same tag, the strongest
+                                one wins </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>What is a website? (2)</h2>
+                <ul>
+                    <li><a
+                            href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>
+                        (added 1995)</li>
+                    <li>High-level dynamic programming language</li>
+                    <li>Used to make web pages interactive</li>
+                    <li>Only programming language that runs in the browser</li>
+                    <li>Since 2009 it can run on the server as well (Node.js),
+                        but you can use almost any programming language to build
+                        a web server</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Dynamic websites (WEB 2.0)</h2>
+                <ul>
+                    <li>Example: <a href="https://news.ycombinator.com/">Hacker
+                            News</a>
+                    </li>
+                    <li>Data stored in database</li>
+                    <li>Pages generated dynamically from the data</li>
+                    <li>Interactive experience</li>
+                    <li>Usually features forms that allow users or admins to
+                        input data</li>
+                    <li>Enabled user generated content</li>
+                    <li>Multi page applications (MPA)</li>
+                    <li>Most logic is on server side, limited use of javascript
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The render flash 💥</h2>
+                <ul>
+                    <li>Every time you navigate to a new page, the browser
+                        downloads the HTML, CSS and JavaScript, and renders the
+                        page.
+                        <ul>
+                            <li>Flash of white screen (FOWS)</li>
+                            <li>Flash of unstyled content (FOUC)</li>
+                            <li>Flash of invisible content (FOIC)</li>
+                        </ul>
+                    </li>
+
+                    <li>The website might forget things when you change pages
+                    </li>
+                    <li>Not a seamless user-experience</li>
+                    <li>Not good for "rich" interactive experiences, like games
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Rich internet applications</h2>
+                <ul>
+                    <li>Applications that are downloaded and run in the
+                        browser</li>
+                    <li>Java applets
+                        <ul>
+                            <li>Written in Java</li>
+                            <li>Discontinued from 2013 and onwards</li>
+                            <li>Often used for early corporate web applications
+                            </li>
+                            <li>Banking applications</li>
+                            <li>Often the UI would not feel at home in the
+                                browser and would feel more like a Windows
+                                application.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Java applets examples</h2>
+                <img data-src="assets/java-applets.png" height="300px">
+                <figcaption>Java applets would need to ask for permission to
+                    run and would often look awkward inside the browser
+                    environment.</figcaption>
+                </figcaption>
+            </section>
+
+
+            <section>
+                <h2>Rich internet applications</h2>
+                <ul>
+                    <li>Flash applets
+                        <ul>
+                            <li>Written in Actionscript</li>
+                            <li>
+                                Discontinued from 2017 and onwards
+                            </li>
+                            <li>Apple never allowed flash to run on iOS</li>
+                            <li>Rich multimedia applications (i.e. video
+                                players)</li>
+                            <li>Infamous for banner advertising and pop-ups</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Native applications (1)</h2>
+                <ul>
+                    <li>Desktop applications (Windows, Mac, Linux)</li>
+                    <li>Mobile applications (iOS, Android)</li>
+                    <li>Written in a "native" language:
+                        <ul>
+                            <li>iOS: Swift or Objective-C</li>
+                            <li>Android: Java</li>
+                            <li>Windows: C#, Java, etc.</li>
+                            <li>Mac: Swift, Objective-C, Java, etc.</li>
+                        </ul>
+                    </li>
+            </section>
+
+            <section>
+                <h2>Native applications (2)</h2>
+                <ul>
+                    <li>Must be downloaded in full to run</li>
+                    <li>Updates requires downloading the app again
+                    </li>
+                    <li>Pain to manage updates in large organisations
+                    </li>
+                    <li>Works while offline</li>
+                    <li>Very fast once downloaded, can tap into all resources of
+                        device (i.e. graphics processor, multimedia, etc.)</li>
+            </section>
+
+            <section>
+                <h2>Rich web applications</h2>
+                <ul>
+                    <li>Browsers are gaining more "rich" features:
+                        <ul>
+                            <li>Multimedia playback</li>
+                            <li>Access to camera</li>
+                            <li>Access to GPS</li>
+                            <li>Offline features</li>
+                            <li>Graphics acceleration</li>
+                        </ul>
+                    </li>
+                    <li>Web developers have found ways to make web applications
+                        feel more like native applications</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>Single Page Applications (SPA)</h2>
+                <ul>
+                    <li>Making the experience of web applications seamless</li>
+                    <li>No more render flashes</li>
+                    <li>Application can remember complex state in between pages
+                    </li>
+                    <li>Examples: Youtube, Facebook, Reddit</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>SPAs hiding in plain sight</h2>
+                <ul>
+                    <li>Many apps you download to your computer or phone are web
+                        applications that are packaged in a "thin" invisible web
+                        browser</li>
+                    <li>Examples: Spotify, Visual Studio Code, Instagram</li>
+                    <li>Companies that offer a full web-based experience often
+                        prefer to use the same code-base and the same developers
+                        for the web app and for the desktop and mobile apps</li>
+                    <li>These apps run slower than native counterpars written in
+                        a platform-specific language
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>How Does a SPA Work? (1)</h2>
+                <ul>
+                    <li>Only one (empty) HTML document</li>
+                    <li>After initial page is loaded, javascript will fetch
+                        content asynchronously (in an <a
+                            href="https://en.wikipedia.org/wiki/Ajax_(programming)">AJAX
+                            request</a>)</li>
+                    <li>When a user click a link, the app send a request to
+                        fetch only the relevant content. The app will modify the
+                        existing HTML and
+                        inject content without reloading the page</li>
+                    <li>If only a small part of the UI is updated, only that
+                        data is downloaded.</li>
+                    <li>Since there is no reload any settings the user has made
+                        will not be forgotten.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>How Does a SPA Work? (2)</h2>
+                <ul>
+                    <li>In a MPA you can only retrieve a new page by modifying
+                        the URL. In a SPA it is an optional step that makes the
+                        app work more like a traditional website. This has
+                        multiple benefits:
+                        <ul>
+                            <li>Deep linking</li>
+                            <li>Search Engine Optimization</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Drawbacks to the SPA architecture</h2>
+                <ul>
+                    <li>In a SPA all the application code runs in the users
+                        browser:
+                        <ul>
+                            <li>First load can be slow, because a large
+                                javascript bundle is downloaded</li>
+                            <li>There can be security concerns because client
+                                code be viewed by all users</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Hybrid architectures</h2>
+                <ul>
+                    <li>Practices from SPA and MPA are combined to achieve
+                        the best of both worlds:
+                        <ul>
+                            <li>On initial request, instead of waiting for
+                                javascript to load, you might use the
+                                server to render an initial state of the app,
+                                which subsequently will run as a SPA</li>
+                            <li>Some apps are predominantly MPA for legacy- or
+                                security reasons. But selected
+                                parts of the app might work like a SPA to
+                                provide a more "rich" interactive experience
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Why React</h2>
+                <ul>
+                    <li>React is a library that allow you to build UI components
+                    </li>
+                    <li>Designed for SPA use</li>
+                    <li>React is not "opinionated" and can be configured to work
+                        together with many other technologies</li>
+                    <li>React works great rendered on the client as well as on
+                        the server</li>
+                    <li>React powers large apps such as Facebook, Instagram and
+                        many, many more</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>In summary</h2>
+                <ul>
+                    <li>Internet evolved from static documents, to dynamic apps
+                        with limited user experience into rich interactive apps
+                        that can no longer be discerned from native apps</li>
+                    <li>The SPA architecture is one of the main contributors to
+                        this shift</li>
+                    <li>MPA and SPA architectures can often be combined and
+                        tailored to yield even better performance or
+                        experiences</li>
+                    <li>React is very popular framework for building SPAs</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>Learning Bash Command Line</h1>
+                <br>
+                <p>Get ready to learn the essential bash commands for managing
+                    files, directories, and working with Node.js and Git!</p>
+            </section>
+            <section>
+                <h2>Learning goals</h2>
+                <ul>
+                    <li>Understand how to navigate between directories</li>
+                    <li>Understand to view the contents of a directory</li>
+                    <li>Understand how to run scripts</li>
+                    <li>Understand how to set up a Node.js project</li>
+                    <li>Understand how to add dependencies with NPM</li>
+                    <li>Understand how to clone a project with Git</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Check Node.js & Git Versions</h2>
+                <p><strong>Check Node.js version:</strong></p>
+                <pre><code>node --version</code></pre>
+                <p>Example output:</p>
+                <pre><code>v20.10.0</code></pre>
+
+                <p><strong>Check Git version:</strong></p>
+                <pre><code>git --version</code></pre>
+                <p>Example output:</p>
+                <pre><code>git version 2.48.1</code></pre>
+            </section>
+
+            <section>
+                <h2>Navigate Between Directories</h2>
+                <br>
+                <p>Use the <code>cd</code> command to navigate between
+                    directories in the file system.</p>
+                <pre><code>cd /path/to/directory</code></pre>
+                <p>Examples:</p>
+                <pre><code>cd Documents</code></pre>
+                <pre><code>cd ..</code> (to go up one directory level)</pre>
+                <pre><code>cd ~</code> (to go to the home directory)</pre>
+            </section>
+
+            <section>
+                <h2>See the current directory path</h2>
+                <br>
+                <p>Use the <code>pwd</code> command to display the path to the
+                    current directory you are working in:</p>
+                <pre><code>pwd</code></pre>
+                <p>Example output:</p>
+                <pre><code>/user/home</code></pre>
+            </section>
+
+            <section>
+                <h2>View the Contents of a Directory</h2>
+                <br>
+                <p>Use the <code>ls</code> command to list files and directories
+                    within the current directory.</p>
+                <pre><code>ls</code></pre>
+                <p>Examples:</p>
+                <pre><code>ls -l</code> (long listing format)</pre>
+                <pre><code>ls -a</code> (include hidden files)</pre>
+                <pre><code>ls /path/to/directory</code> (list contents of another directory)</pre>
+            </section>
+
+            <section>
+                <h2>Create a New Directory</h2>
+                <br>
+                <p>Use the <code>mkdir</code> command to create a new directory.
+                </p>
+                <pre><code>mkdir new_directory</code></pre>
+                <p>Examples:</p>
+                <pre><code>mkdir my_project</code> (creates a directory named 'my_project')</pre>
+                <pre><code>mkdir -p parent/child</code> (creates nested directories)</pre>
+            </section>
+
+
+            <section>
+                <h2>Setup a Node.js Project</h2>
+                <br>
+                <p>To create a Node.js project, initialize it with
+                    <code>npm init</code>.
+                </p>
+                <pre><code>npm init</code></pre>
+                <p>Follow the prompts or use <code>npm init -y</code> for
+                    default values.</p>
+                <p>Example:</p>
+                <pre><code>npm init -y</code> (automatically creates a package.json file)</pre>
+            </section>
+
+            <section>
+                <h2>Add Dependencies with NPM</h2>
+                <br>
+                <p>Use <code>npm install</code> to install dependencies for your
+                    project.</p>
+                <pre><code>npm install <dependency-name></code></pre>
+                <p>Examples:</p>
+                <pre><code>npm install express</code> (installs Express.js)</pre>
+                <pre><code>npm install --save-dev <dependency-name></code> (installs as a devDependency)</pre>
+            </section>
+
+            <section>
+                <h2>Run an NPM Script</h2>
+                <br>
+                <p>Use <code>npm run</code> followed by the script name to
+                    execute an NPM script defined in <code>package.json</code>.
+                </p>
+                <pre><code>npm run script-name</code></pre>
+                <p>Example:</p>
+                <pre><code>npm run start</code> (runs the 'start' script)</pre>
+                <pre><code>npm run test</code> (runs the 'test' script)</pre>
+                <p>Check available scripts in <code>package.json</code> under
+                    the <code>"scripts"</code> section:</p>
+                <pre><code>
+      {
+        "scripts": {
+          "start": "node app.js",
+          "test": "jest"
+        }
+      }
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>6. Clone a Project with Git</h2>
+                <p>Use <code>git clone</code> to clone a repository from GitHub
+                    or another Git hosting service.</p>
+                <pre><code>git clone <repository-url></code></pre>
+                <p>Example:</p>
+                <pre><code>git clone https://github.com/username/project-name.git</code></pre>
+            </section>
+        </div>
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({ slideNumber: true, hash: true, });
+    </script>
+</body>
+
+</html>

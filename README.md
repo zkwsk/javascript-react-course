@@ -4,9 +4,7 @@
 
 1. [Fundamental web architectures, static sites, multi-page applications and single page applications](https://youtu.be/m8NJEQh-suw)
 
-## Exercises
-
-### HTML
+## HTML
 
 Material:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -39,7 +37,7 @@ Exercises:
 1. [Nest Many Elements within a Single Div Element](https://freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/nest-many-elements-within-a-single-div-element)
 
 
-### CSS
+## CSS
 
 Material:
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -75,9 +73,9 @@ Exercises:
 1. [Override All Other Styles by using Important](https://freecodecamp.org/learn/responsive-web-design/basic-css/override-all-other-styles-by-using-important)
 1. [Use Hex Code for Specific Colors](https://freecodecamp.org/learn/responsive-web-design/basic-css/use-hex-code-for-specific-colors)
 
-### Javascript
+## Javascript
 
-#### console.log, variables and assignment
+### console.log, variables and assignment
 
 Material:
 - [console.log](https://developer.mozilla.org/en-US/docs/Web/API/console/log_static)
@@ -99,7 +97,7 @@ Exercises:
 1. [Explore Differences Between the var and let Keywords](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/explore-differences-between-the-var-and-let-keywords)
 1. [Declare a Read-Only Variable with the const Keyword](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-a-read-only-variable-with-the-const-keyword)
 
-#### Numbers, math operators
+### Numbers, math operators
 
 Material:
 - [Javascript expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
@@ -116,7 +114,7 @@ Exercises:
 1. [Divide One Decimal by Another with JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/divide-one-decimal-by-another-with-javascript)
 1. [Finding a Remainder in JavaScript](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/finding-a-remainder-in-javascript)
 
-#### Strings
+### Strings
 
 Material:
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
@@ -135,7 +133,7 @@ Exercises:
 1. [Appending Variables to Strings](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/appending-variables-to-strings)
 1. [Find the Length of a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/find-the-length-of-a-string)
 
-#### Arrays
+### Arrays
 
 Material:
 - [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -152,7 +150,7 @@ Exercises:
 1. [Manipulate Arrays With pop Method](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-pop)
 1. [Shopping List](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/shopping-list)
 
-#### Functions
+### Functions
 
 Material:
 - [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
@@ -170,7 +168,7 @@ Exercises:
 1. [Assignment with a Returned Value](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/assignment-with-a-returned-value)
 1. [Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
 
-### Booleans, comparison and conditional logic
+## Booleans, comparison and conditional logic
 
 Material:
 - [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
@@ -202,7 +200,7 @@ Exercises:
 1. [Returning Boolean Values from Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/returning-boolean-values-from-functions)
 1. [Return Early Pattern for Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-early-pattern-for-functions)
 
-#### Objects
+### Objects
 
 Exercises:
 1. [Build JavaScript Objects](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/build-javascript-objects)
@@ -220,7 +218,7 @@ Exercises:
 
 
 
-#### Iteration
+### Iteration
 
 Exercises:
 1. [Iterate with JavaScript While Loops](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-while-loops)
@@ -233,9 +231,9 @@ Exercises:
 1. [Use the Conditional (Ternary) Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-the-conditional-ternary-operator)
 1. [Use Multiple Conditional (Ternary) Operators](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
 
-### ES6 features
+## ES6 features
 
-#### Scope
+### Scope
 -  Scoping determines the accessibility and lifetime of variables, helping prevent unintended side effects and errors in code.
 
 Material:
@@ -252,7 +250,7 @@ Exercises:
 1. [Mutate an Array Declared with const](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/mutate-an-array-declared-with-const)  
 1. [Prevent Object Mutation](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/prevent-object-mutation)
 
-#### Arrow function expressions
+### Arrow function expressions
 - Concise syntax for functions.
 - this binding is lexically determined (important for React class components).
 
@@ -268,7 +266,7 @@ Exercises:
 1. [Write Arrow Functions with Parameters](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/write-arrow-functions-with-parameters)  
 
 
-#### Default function parameters
+### Default function parameters
 - Define default function parameters.
 
 ```js
@@ -279,7 +277,7 @@ Exercises:
 1. [Set Default Parameters for Your Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/set-default-parameters-for-your-functions)
 
 
-#### Array iterator methods
+### Array iterator methods
 - Functional style is popular with React
 - Instead of using a generic for- or while loop, using an array iterator function will hints at what kind of iteration you are performing:
   - .map() takes an array of items and returns an array of "transformed" items.
@@ -309,7 +307,7 @@ Exercises:
 
 - [Use the reduce Method to Analyze Data](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data)
 
-#### Template literals
+### Template literals
 - Easier string concatenation.
 
 ```js
@@ -324,7 +322,7 @@ Exercises:
 1. [Create Strings using Template Literals](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/create-strings-using-template-literals)  
 1. [Write Concise Object Literal Declarations Using Object Property Shorthand](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/write-concise-object-literal-declarations-using-object-property-shorthand)  
 
-#### Spread operator
+### Spread operator
 - Copy or merge arrays/objects and handle variable arguments.
 
 ```js
@@ -343,7 +341,7 @@ Exercises:
 1. [Use the Spread Operator to Evaluate Arrays In-Place](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-the-spread-operator-to-evaluate-arrays-in-place)  
 
 
-#### Destructuring assignment
+### Destructuring assignment
 - Extract values from objects and arrays.
 
 ```js
@@ -364,7 +362,7 @@ Exercises:
 
 
 
-#### Modules import/export
+### Modules import/export
 - Split javascript programs into separate modules
 - Load code from different files or from NPM packages
 
@@ -379,7 +377,7 @@ Exercises:
 1. [Create an Export Fallback with export default](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/create-an-export-fallback-with-export-default)  
 1. [Import a Default Export](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/import-a-default-export)
 
-#### Promises with Async/Await
+### Promises with Async/Await
 - Allow you to wait for a response before continuing executing code.
 - Asynchronous operations with better readability.
 
@@ -406,3 +404,19 @@ Exercises:
 1. [Fetch data](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-asynchronous-programming-by-building-an-fcc-forum-leaderboard/step-8)
 
 1. [Catch errors](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-asynchronous-programming-by-building-an-fcc-forum-leaderboard/step-9)
+
+## Command Line
+
+TODO
+
+## React
+
+Material:
+- TODO: React introduction video
+- [Thinking in React](https://react.dev/learn/thinking-in-react)
+
+Exercises:
+- Installing React
+- [React.dev Tic Tac Toe](https://react.dev/learn/tutorial-tic-tac-toe)
+- [React Tutorial](https://react-tutorial.app)
+- 
