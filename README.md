@@ -10,7 +10,7 @@
 
 #### Console.log, variables and assignment
 
-1. [ ] Abc
-1. [ ] Def
+ - [ ] Abc
+ - [ ] Def
 
 ### React
