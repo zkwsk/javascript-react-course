@@ -408,3 +408,77 @@ Exercises:
 1. [Fetch data](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-asynchronous-programming-by-building-an-fcc-forum-leaderboard/step-8)
 
 1. [Catch errors](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-asynchronous-programming-by-building-an-fcc-forum-leaderboard/step-9)
+
+## React
+
+### Key concepts
+
+#### JSX
+
+JSX is a special extension to standard Javascript syntax. JSX makes it possible to embed HTML tags and structures inside javascript files. JSX cannot run directly in your browser and needs a translation process (transpilation) to turn it into regular Javascript. For this reason running a React project requires you to use build tools that can prepare your project to be run in the browser. Tools that allow you to do this include [Webpack](https://webpack.js.org/), [Parcel](https://parceljs.org) and [Vite](https://vite.dev/guide/).
+
+Take the following example of a simple button component:
+
+```js
+const MyComponent = ({ text }) => {
+  return (
+    <button className="btn">{text}</button>
+  );
+};
+```
+
+Transpiled to Javascript it would look like this:
+
+```
+const MyComponent = function MyComponent(_ref) {
+  let { text } = _ref;
+  return React.createElement("button", { className: "btn" }, text);
+};
+```
+
+#### Components
+
+Reusable chunks of UI that can be combined and composed together to create larger components or full pages.
+
+#### Hooks
+
+React Hooks are functions that let you use state and other React features in functional components. In contrast to regular functions, hooks can only be used within React components, but in return they allow accessing React specific features that are not otherwise available in regular functions.
+
+#### State
+
+In React, state is an object that stores data that can change over time and trigger a re-render of the component when updated. It is used to manage dynamic content like user input, UI changes, and fetched data.
+
+### Installation instructions
+
+There are various installers available that make it quick and easy to install a React application. The recommended approach is to use Vite:
+
+```
+npm create vite@latest my-app -- --template react
+```
+
+As an alternative to using Vite, it is highly recommended to learn Next.js which is a meta-framework that uses React. But the class focuses on learning React without further frameworks.
+
+### Material
+
+- [Getting started guide on React.dev](https://react.dev/learn)
+  - [Thinking in React](https://react.dev/learn/thinking-in-react)
+  - [Describing the UI](https://react.dev/learn/describing-the-ui)
+  - [Adding interactivity](https://react.dev/learn/adding-interactivity)
+  - [Managing state](https://react.dev/learn/managing-state)
+  - [Escape Hatches](https://react.dev/learn/escape-hatches)
+
+### Exercises
+
+- [Tic-Tac-Toe tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
+
+### Steps for future learning
+
+1. 
+1. Go through any of the free code camp exercises listed above that you might not have finished in class.
+1. Sign up with [React-tutorial](https://react-tutorial.app/) and try the free exercises. If you find it necessary you can also try the Javascript courses they recommend.
+1. Decide what you are interested in learning and start creating your own roadmap. [This roadmap](https://roadmap.sh/frontend) is a great resource for gaining an overview of the field of frontend development.
+1. Learn [Next.js](https://nextjs.org/docs). Next.js is the most popular framework to use together with React. Next.js makes it very easy to do page routing, optimise images, hybrid rendering as well as backend features.
+1. Learn to use UI component libraries like UI component libraries like [Shadcn](https://ui.shadcn.com/) or [Tailwind UI](https://tailwindui.com/)]
+1. Study more HTML and CSS and learn to build your own component libraries. If you choose this direction learn (Storybook)[https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/]
+1. If you want to build iOS or Android apps, learn [React Native](https://reactnative.dev)
+1. A great recommended Youtube channel that covers React and both beginner and advanced topics is [Jack Herrington](https://www.youtube.com/@jherr)
